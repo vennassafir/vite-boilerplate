@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e-ui": "playwright test --ui",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "format-all": "npx prettier . --write",
@@ -21,6 +23,7 @@
     "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@playwright/test": "^1.47.2",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -64,6 +67,7 @@
     "globals": "^15.9.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
+    "playwright": "^1.47.2",
     "postcss": "^8.4.47",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
